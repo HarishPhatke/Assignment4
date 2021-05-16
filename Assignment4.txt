@@ -1,0 +1,56 @@
+Question:-What are constant arrays? How do you define them? When are they used? 
+
+Answer:-The arrays known as constant array if and only if you declare the array at the start of program then only that array is known as to be constant array.if we declare array at the start then it is not possible to increase or decrease size of array.By defination the array is known as constant if and only if the arrays are immutable.The advantage of using constatnt array is memory utilisation.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question:-How can you sort an array of integers using java APIs.
+
+Answer:-We can sort the array of integer in java by simply  using (.sort) method which is present in class arrays in java.util.
+        Syntax:-Arrays.sort(numbers);
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question:-How can you sort an array of Strings (all lowercase) using java APIs. Ascending & descending.
+
+Answer:-We can convert string into character array by using string.toCharArray then we can use Arrays.sort method to sort character arrays.
+        Syntax:-Arrays.sort(String);
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question:-	How can you sort an array of Strings (case in-sensitive sort) using java APIs.
+
+Answer:- An array can be sorted in case-insensitive order using the java.util.Arrays.sort() method. Also the java.text.Collator class is required as               Collator.getInstance() is used to obtain the Collator object for the required locale.
+
+Method signature of sort method is as below.
+
+Arrays.sort(arr, Collator.getInstance());
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question:-How can you perform a binary search on an array of longs using java APIs.
+
+Answer:-static int binarySearch(int[]a,int key)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question:-	What is the correct way to iterate through an array in java? How do you ensure that you do not over-run the length of the array?
+
+Answer:-iterate means accessing the each element in an array one by one.We can do iteration by two methods one is using for loop and onother method is using for each loop.To insure we do not do over run we simply start the for loop from 0 and ends at (size of array-1). 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question:-	How can you perform a binary search on an array of Employee objects using java APIs?
+
+Answer:-if we want to perform the binary search in an array we have to import java.util.Arrays and then we have to use Arrays.binarySearch(arr,key).
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question:-How can you sort an array of Employee objects by: First Name (ascending), Age (descending), Salary(ascending & descending) using java APIs to perform all the sorting.
+
+Answer:-1. for this purpose we can use Arrays.sort method and our Employee class should implement Comparable interface.
+2. Comparable interface is meant for default natural sorting order i.e. in ascending order. 
+3. We need to implement compareTo method for each of the parameter on the basis of which we want to sort.
+4. compareTo method returns an integer value i.e. -1, +1, 0.
+5. If current object is less than passed object then the method will return -1 else if current object is greater then passed object then it will return +1 else if both the objects are same then it will return 0.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
